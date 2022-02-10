@@ -1,0 +1,9 @@
+Link LAPACKE in C
+-----------------
+
+This example shows to link LAPACKE in C code. LAPACKE and CBLAS are the C 
+extensions to LAPACK and BLAS. One should additionally build LAPACKE and CBLAS 
+when building LAPACK and BLAS. Once the compilation and installation done, add 
+the path to LAPACK to LAPACK_HOME in CMakeLists.txt. To build the code, run
+$ mkdir build && cd build
+$ cmake ..
