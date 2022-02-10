@@ -1,0 +1,7 @@
+To compile this external library with
+
+$ cd mymath && mkdir build && cd build
+$ cmake .. -DCMAKE_INSTALL_PREFIX=../../
+$ make && make install
+
+then the header file and the static library will be in the parent folder `ThirdParty`.

@@ -1,0 +1,16 @@
+Link external library optionally
+--------------------------------
+
+This example shows linking an external library to an executable. One can 
+directly compile the code without linking the external library by
+$ mkdir build && cd build
+$ cmake ..
+$ make
+
+One should firstly compile the external library in `ThirdParty` then compile 
+the code if tries to use the external library. Instruction is given in 
+`ThirdParty`. Back to this folder and compile the code with the external library
+by 
+$ mkdir build && cd build
+$ cmake .. -DUSE_MYMATH=on
+$ make
